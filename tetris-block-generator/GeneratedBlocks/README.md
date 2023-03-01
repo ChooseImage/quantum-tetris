@@ -1,1 +1,0 @@
-In here the `.txt` files exported from the IBM cloud will be used to generate a `.csv`. You can find the generating script [here](merge.py).
