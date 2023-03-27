@@ -6,9 +6,19 @@
   background-color: var(--color-font);
   color: var(--color-bg);
 }
+
+@font-face {
+  font-family: "EYInterstate-Reg";
+  src: url("EY_Interstate/EYInterstate-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "EYInterstate-Light";
+  src: url("EY_Interstate/EYInterstate-Light.ttf") format("truetype");
+}
+
 html,
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-family-light);
 
   color: var(--color-font);
   background: var(--color-bg);
@@ -43,11 +53,13 @@ h1 {
   line-height: calc(var(--line-height) * 3);
 }
 h2 {
+  color: var(--header-col);
   font-size: 2rem;
   margin-bottom: 1rem;
   line-height: calc(var(--line-height) * 2);
 }
 h3 {
+  color: var(--header-col);
   font-weight: 500;
   margin-bottom: calc(var(--line-height) / 2);
   letter-spacing: 0.03em;
@@ -70,6 +82,10 @@ code {
   line-height: 1;
   font-family: var(--font-family-mono);
   margin: 0 2px;
+}
+
+#logo {
+  height: 100px;
 }
 
 #wrapper {
@@ -98,6 +114,7 @@ code {
   max-width: 320px;
   line-height: calc(var(--line-height) * 0.66);
   letter-spacing: 0.03em;
+  position: absolute;
 }
 .footnote.isHovering {
   color: var(--color-font-bright);
@@ -202,6 +219,7 @@ footer ul li {
   }
 
   .footnote {
+    position: relative;
     padding-left: 3em;
     top: initial !important;
     max-width: initial;

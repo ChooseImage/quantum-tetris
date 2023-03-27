@@ -17,6 +17,9 @@
   gap: var(--grid-gap);
 }
 
+.infoCol-logo {
+  grid-column: 1;
+}
 .infoCol {
   grid-column: 1;
 }
@@ -63,6 +66,13 @@
     grid-template-columns: 1fr;
   }
   .infoCol {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .infoCol-logo {
+    grid-row: 1;
+  }
+  .contentCol-logo {
     grid-column: 1;
     grid-row: 2;
   }

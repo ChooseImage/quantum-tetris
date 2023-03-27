@@ -159,10 +159,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   positionFootnotes();
   initSliders();
-
-  document.querySelector("#toggleGrid").addEventListener("click", () => {
-    document.querySelector("#gridDisplay").classList.toggle("show");
-  });
 });
 
 // window.addEventListener("resize", positionFootnotes);

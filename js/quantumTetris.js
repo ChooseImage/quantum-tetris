@@ -76,7 +76,7 @@ const quantumTetris = (p) => {
   let currPieceY = -1;
   let rotationState = 0;
 
-  const ledShapeMultiplier = 2;
+  const ledShapeMultiplier = 1;
   const ledSize =
     (TILE_SIZE - SPACER * (ledShapeMultiplier - 1)) / ledShapeMultiplier;
 
@@ -178,7 +178,7 @@ const quantumTetris = (p) => {
     score = 0;
     completedRows = 0;
 
-    p.saveCanvas(canvasDOM, "QuantumTetris", "jpg");
+    // p.saveCanvas(canvasDOM, "QuantumTetris", "jpg");
 
     rowChecker = 0;
     generateBlocks(regBlocks, noiseBlocks);
@@ -396,7 +396,7 @@ const quantumTetris = (p) => {
   const generateBlocks = (reg, noise) => {
     // empty array
     tetrominoes = [];
-    let dial = 0;
+    let dial = 6;
 
     for (let i = 0; i < NUMBER_OF_BLOCKS; i++) {
       const random = p.int(p.random(NUMBER_OF_BLOCKS));

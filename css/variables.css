@@ -1,7 +1,8 @@
 :root {
   /* fonts */
-  --font-family: "IBM Plex Sans", sans-serif;
-  --font-family-mono: "IBM Plex Mono", monospace;
+  --font-family-reg: "EYInterstate-Reg", sans-serif;
+  --font-family-light: "EYInterstate-Light", sans-serif;
+  --font-family-mono: "EYInterstate", monospace;
 
   --font-size-reg: 17px;
   --font-size-med: 15px;
@@ -9,6 +10,7 @@
   --font-size-tiny: 11px;
 
   --font-weight-reg: 300;
+  --header-col: color(display-p3 0.98 0.906 0.302);
 
   --line-height: 28px;
 
@@ -25,7 +27,8 @@
   /* Tetris Colors */
   --color-tetris-bg: rgb(15, 16, 17); /*#141414;*/
   --color-tetris-block: #fff;
-  --color-tetris-noiseBlock: #f00;
+  /* --color-tetris-noiseBlock: color(display-p3 0.98 0.906 0.306); */
+  --color-tetris-noiseBlock: rgb(251, 231, 77);
   --color-tetris-grid: rgba(46, 47, 50, 0.88); /*#282828;*/
   --color-tetris-remove: #00f;
 
