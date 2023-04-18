@@ -572,13 +572,15 @@ const quantumTetris = (p) => {
   // returns false if is noise
   const noiseChecker = (input) => {
     const validShapes = [
-      "0000001000100110",
+      "0000001000100110", 
       "0000001001100100",
       "0000010001000110",
       "0010001000100010",
       "0010011000100000",
       "0100011000100000",
-      "0000011001100000",
+      "0000011001100000", // middle square
+      "0110011000000000", // top square
+      "0000000001100110"  // bottom square
     ];
 
     //true if one of 7, else false
